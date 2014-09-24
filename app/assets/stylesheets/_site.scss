@@ -6,7 +6,7 @@
 Variables
 ------------------------------------------------------------------------------*/
 $toolbar-height: 37px;
-$font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-stack: "Helvetica Neue", Helvetica, "Segoe UI", Arial, sans-serif;
 $feeds-toolbar-height: 52px;
 $base-button-position: 9px;
 
@@ -3639,15 +3639,13 @@ table.small td {
 }
 
 .feed-form {
-	margin: 0;
+	margin: 0 0 15px 0;
 	padding: 0;
 	list-style: none;
 	li {
 		clear: both;
-		margin-left: 30px;
-		border-bottom: 1px solid $border-color;
 		position: relative;
-		padding: 10px 0;
+		padding: 10px;
 		&:last-child {
 			border: none;
 		}
@@ -3659,7 +3657,7 @@ table.small td {
 	}
 	.last-updated-wrap {
 		position: absolute;
-		right: 0;
+		right: 10px;
 		top: 17px;
 		font-size: 14px;
 		@include color($text-color-light, $text-color-light-night);
@@ -3743,6 +3741,7 @@ table.small td {
 	border-top: 1px solid $border-color;
 	border-bottom: 1px solid $border-color;
 	padding: 10px 0 1px 0;
+	margin-bottom: 15px;
 }
 
 .push-feed-settings {
